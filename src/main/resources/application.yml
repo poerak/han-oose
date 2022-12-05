@@ -1,0 +1,19 @@
+server:
+  port: 3000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://136.144.142.230:5432/oose_backbone
+    username: production
+    password: gW5U$zPz7SQGs25h^$4sTyUgU
+  jpa:
+    hibernate:
+      # Drops tables in databases automatically every time
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  main:
+    web-application-type: servlet
